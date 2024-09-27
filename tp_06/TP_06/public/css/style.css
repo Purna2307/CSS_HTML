@@ -1,0 +1,54 @@
+.conteneur {
+    display: grid;
+    place-content: center;
+}
+
+.contenu {
+    width: 50vw;
+    min-width: 400px;
+    height: 200px;
+    margin: 10px 0px;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: auto; /* pour éviter le débordement */
+}
+
+button, h1 {
+    margin: 10px auto;
+}
+
+* {
+    font-family: monospace;
+}
+
+.message {
+    border-radius: 10px;
+    padding: 5px;
+    margin: 2px;
+    word-wrap:break-word; /* Pour permettre la coupure des mots longs (pas dans le TP) */
+}
+
+.droite {
+    border: 1px solid #00FF00;
+    background-color: #AAFFAA;
+    margin-left: 100px;
+}
+
+.gauche {
+    border: 1px solid #0000FF;
+    background-color: #AAAAFF;
+    margin-right: 100px;
+}
+
+.barre {
+    margin: 10px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #aaaaaa;
+    padding: 10px;
+}
+
+.barre > button {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}

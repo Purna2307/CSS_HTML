@@ -1,0 +1,123 @@
+body {
+    font-family: 'Mooli', sans-serif;
+	font-size:1.2em;
+}
+table {
+  border-collapse: collapse;
+  border: 3px solid pink;
+} 
+th, td {
+  padding: 5px;
+}
+tbody td {
+  text-align: center;
+}
+tbody tr:nth-child(odd) {
+  background-color: #FFE2FC;
+}
+tbody tr:nth-child(even) {
+  background-color: #FFF1FE;
+}
+th {
+  background-color: #ED96E7;
+}
+table caption {
+ font-style: italic;
+ font-size: 0.9em;
+}
+figcaption{
+ font-style: italic;
+}
+h1{
+ color: #BB35B1;
+ text-transform:uppercase;
+}
+h2{
+ color: #A6429F;
+}
+h3,h4,h5,h6{
+	color: #83447E;
+}
+ul{
+ list-style-type: none;
+}
+ul li{
+ background-image:url(../images/star.png);
+ background-repeat:no-repeat;
+ background-size:1.2rem;
+ padding-left:2rem;
+}
+ul.cinema li {
+    background-image: url(../images/movie.png);
+}
+ul.tv li {
+    background-image: url(../images/tv.png);
+}
+ul.production li {
+    background-image: url(../images/production.png);
+}
+h1,h2,h3{
+ background-image:linear-gradient(90deg , #F6B4FF 20%, #FFFFFF 50%);
+ padding:10px 0px 10px 20px;
+ border: 1px solid #E5E7E9;
+ border-radius: 10px; 
+}
+nav{
+ text-align:center;
+ position:sticky;
+ top:0px;
+ margin:2px;
+ grid-column:1/4;
+ grid-row:1;
+}
+body{
+ margin:0px;
+}
+nav ul{
+ margin:0px;
+}
+nav li{
+ background-image:none;
+ display:inline-block;
+ padding-left:0;
+ margin:5px;
+}
+nav a{
+ border: 2px solid purple;
+ border-radius: 5px;
+ background-color: #D062DE;
+ text-decoration: none;
+ padding: 0 1em;
+ color: #ffffff;
+}
+nav a:hover{
+	background-color:#893D93;
+	transition-duration:1s;
+}
+.current{
+ background-color:#893D9;
+ opacity:0.5;
+}
+.container{
+ display:grid;
+ grid-template-columns:1fr 8fr 1fr;
+}
+#titre{
+	grid-column:2;
+	grid-row:2;
+}
+#contenu{
+	grid-column:2;
+	grid-row:3;
+}
+figure{
+	text-align:center;
+}
+.graphiqueConteneur{
+	display:flex;
+	flex-wrap:wrap;
+}
+.graphique{
+	flex:200px;
+	height:auto;
+}

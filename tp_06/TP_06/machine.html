@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Messagerie instantanée</title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <script src="public/js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="conteneur">
+      <h1>Messagerie instantanée</h1>
+      
+      <div class="contenu" id="contenu"></div>
+      
+      <textarea id="texte" onkeypress="capturer(event)" autofocus></textarea>
+      
+      <button type="button" onclick="ajouter()">Ajouter</button>
+      
+      <div class="barre">
+        <button type="button" onclick="inserer(';)')">&#x1F609;</button>
+        <button type="button" onclick="inserer(':(')">&#128545;</button>
+        <button type="button" onclick="inserer(':)')">&#128512;</button>
+      </div>
+    </div>
+  </body>
+</html>

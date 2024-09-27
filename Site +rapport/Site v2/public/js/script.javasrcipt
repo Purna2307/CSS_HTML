@@ -1,0 +1,39 @@
+const backgroundColor = [
+        'rgba(93, 18, 210, 0.2)',
+        'rgba(185, 49, 252, 0.2)',
+        'rgba(255, 106, 194, 0.2)'
+    ];
+const borderColor = [
+        'rgba(93, 18, 210, 1)',
+        'rgba(185, 49, 252, 1)',
+        'rgba(255, 106, 194, 1)'
+    ];
+
+const data1 = {
+  labels: [ 'Pionel Pepsi', 'Nova Ponaldo', 'Donatello Cbappé','Neymal jr', 'Erlin Goaland'],
+  datasets: [
+    {
+      data: [ 30, 40, 35, 35, 27 ],
+      backgroundColor: backgroundColor,
+      borderColor: borderColor,
+      borderWidth: 1
+    }
+  ]
+};
+const config1 = {
+  type: 'pie',
+  data: data1,
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'top',
+      },
+      title: {
+        display: true,
+        text: 'Nombre de but dans la dernier saison'
+      }
+    }
+  },
+};
+const myChart1 = new Chart(document.getElementById('chart1').getContext('2d'), config1);

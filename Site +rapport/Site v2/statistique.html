@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>Statistique -Astroball</title>
+  <link rel="stylesheet" href="public/css/style.css"/>
+  <link rel="stylesheet" href="public/css/statistique.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="public/js/script.js" defer></script>
+    <style>
+    * {
+		box-sizing: border-box;
+    }
+	
+  </style>
+</head>
+
+<body>
+  <div id="titre">
+	<nav>
+	  <a href="index.html" class="logo">
+	    <img src="public/images/logo.png" alt="Logo Astroball" />
+	  </a>
+	  <div>
+		<a href="index.html" >Accueil</a>
+		<a href="regle.html">Règle</a>
+		<a href="histoire.html">Histoire</a>
+		<a class="current">Statistiques</a>
+		<a href="a-propos.html">À propos</a>
+	  </div>
+	</nav>
+  </div>
+	
+	<h1 class="centrer">Statistique</h1>
+	<div class="tableau">
+		<div class="table">
+        <section class="table__header">
+          <h2>Saison 2023/2024</h2>
+        </section >
+		<section class="table__body">
+          <table>
+            <thead>
+              <tr>
+				<th> numéro</th>
+				<th> Joueur</th>
+				<th> Equipe</th>
+				<th> Passes décisif</th>
+				<th> Dribbles</th>
+				<th> Cartons Jaunes</th>
+				<th> Cartons Rouges</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td> 1 </td>
+				<td> <img src="public/images/messi.jpg" alt="">Pionel Pepsi</td>
+				<td> Fc bracola </td>
+				<td> 55 </td>
+				<td>70</td>
+				<td> 3</td>
+				<td> 1</td>
+			  </tr>
+			  <tr>
+				<td> 2 </td>
+				<td><img src="public/images/ronaldo.jpg" alt=""> Nova Ponaldo </td>
+				<td> Unreal madrid </td>
+				<td> 40 </td>
+				<td> 49</td>
+				<td> 2 </td>
+				<td> 0</td>
+			  </tr>
+			  <tr>
+				<td> 3</td>
+				<td><img src="public/images/Mbappé.jpg" alt=""> DonatelloCbappé </td>
+				<td> KSG </td>
+				<td> 31 </td>
+				<td> 52</td>
+				<td> 5</td>
+				<td> 1</td>
+			  </tr>
+			  <tr>
+				<td> 4</td>
+				<td><img src="public/images/neymar.jpg" alt=""> Neymal jr </td>
+				<td> KSG </td>
+				<td> 39 </td>
+				<td> 58</td>
+				<td> 8</td>
+				<td> 1</td>
+			  </tr>
+			  <tr>
+				<td> 5</td>
+				<td><img src="public/images/Halland.png" alt=""> Erlin Goaland </td>
+				<td> Manchester campaign  </td>
+				<td> 28 </td>
+				<td> 25</td>
+				<td> 10</td>
+				<td> 3</td>
+			  </tr>
+			</tbody>
+		  </table>
+		</section>
+		</div>
+	  </div>  
+	  <div class="graphique">
+	    <canvas id="chart1"></canvas>
+	  </div>
+  </div>
+
+  <footer>
+    <div class="footer">
+	  <a href="statistique.html" class="logo">
+	    <img src="public/images/logo.png" alt="Logo " />
+	  </a>
+	  <p>Conditions générales de Vente Ok, verifier par le Syndicat Des Gentils Messieurs.</p>
+	  <p>Aucun échange ne sera effectué sauf si politesse est utilisée. En cas de billet perdu veuillez les retrouver.</p>
+	  <p>Si vous êtes victime de débit bancaires exessif cela est surement et purement non-professionel pour cause de salaire du personnels.</p>
+	  <p>En cas de question pour les abonnements, merci de chercher une réponse vous même.</p>
+	  <div>
+	    <a target="_blank" href="https://twitter.com/" class="logo">
+	      <img src="public/images/twitter.png" alt="Logo Twitter" />
+	    </a>
+		<a target="_blank" href="https://www.instagram.com/" class="logo">
+	      <img src="public/images/instagram.png" alt="Logo Instagram" />
+	    </a>
+	  </div>
+    </div>
+	<div class="copyright">
+      <p>&copy; 2023 Astroball, Ce site a été réaliser par Diot Ethan/Addadi Purna. Tous droits réservés. Toute image présente a été généré par une inteligence artificielle</p>
+	</div>
+  </footer>
+</body>
+</html>
